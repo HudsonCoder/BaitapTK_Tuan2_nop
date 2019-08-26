@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int a=Integer.parseInt(edt1.getText().toString());
                 int b=Integer.parseInt( edt2.getText().toString());
-                hieu.setText(a-b+"");
+                hieu.setText(a-b+".");
             }
         });
     }
