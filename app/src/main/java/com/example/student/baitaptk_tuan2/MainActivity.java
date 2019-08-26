@@ -11,7 +11,9 @@ public class MainActivity extends AppCompatActivity {
     EditText edt1;
     EditText edt2;
     TextView tong;
+    TextView hieu;
     Button btnClickTong;
+    Button btnClickHieu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +22,22 @@ public class MainActivity extends AppCompatActivity {
         edt2 = findViewById(R.id.edt2);
         btnClickTong = findViewById(R.id.btnClickTong);
         tong = findViewById(R.id.tong);
+        btnClickHieu = findViewById(R.id.btnClickHieu);
+        hieu = findViewById(R.id.hieu);
         btnClickTong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int a=Integer.parseInt(edt1.getText().toString());
                 int b=Integer.parseInt( edt2.getText().toString());
                 tong.setText(a+b+"");
+            }
+        });
+        btnClickHieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int a=Integer.parseInt(edt1.getText().toString());
+                int b=Integer.parseInt( edt2.getText().toString());
+                hieu.setText(a-b+"");
             }
         });
     }
