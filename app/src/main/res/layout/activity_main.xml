@@ -110,7 +110,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="116dp"
-        android:text="Tổng Là:"
+        android:text="Hiệu Là:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
